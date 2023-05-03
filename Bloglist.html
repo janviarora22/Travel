@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Blog List Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--header same used as index-->
+    <!--navbar used-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+
+        <nav class="navbar fixed-top navbar-light bg-warning"> <!--(to fix the top)-->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Bloglist.html">Blog List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Aboutus.html">About US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Loginpage.html">Login</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </nav>
+
+    <!--columns grid use-->
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal used for 1 col-->
+    <div class="modal fade" id="Modalone" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col">
+                        <div class="carousel-item active">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                                class="d-block w-100" alt="...">
+                            <h2 style="text-align: center;">High Monutains</h2>
+                            <p>"Mountains are not Stadiums where I satisfy my ambition to achieve, they are cathedrals
+                                where
+                                I practise my religion.”- <b>Anatoli Boukreev</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!--MOdal use for 2 col-->
+     <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!--Col code copy-->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Tawang-Hill-Station.jpg" class="card-img-top" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tawang, Arunachal</h5>
+                            <p class="card-text"> Tawang is nature lovers dream destination, with largest Buddhist Monastery, reflects the unmatched peace & beauty of Northeast India.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MOdal use for 3 col-->
+      <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!--Col code copy-->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Ooty-Hill-Station.jpg" class="card-img-top" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ooty, Tamil Nadu</h5>
+                            <p class="card-text">Ooty or Ootacamund is famous for its picturesque sites and rolling hills where the chief attractions of Ooty are the sprawling tea gardens.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modals finished for 1 row, start with columns-->
+
+    <div class="container">
+        <div class="row row-cols-3 mt-5 ml-5">
+
+            <div class="col">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                        class="d-block w-100" alt="...">
+                    <h2 style="text-align: center;">High Monutains</h2>
+                    <p>"Mountains are not Stadiums where I satisfy my ambition to achieve, they are cathedrals where
+                        I practise my religion.”- <b>Anatoli Boukreev</b></p>
+                    <!--<a href="#" class="btn btn-secondary active" role="button" aria-pressed="true">See More</a>-->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modalone">See
+                        More</button>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Tawang-Hill-Station.jpg" class="card-img-top" height="200" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tawang, Arunachal</h5>
+                        <p class="card-text"> Tawang is nature lovers dream destination, with largest Buddhist Monastery, reflects the unmatched peace & beauty of Northeast India.</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal2">Click Here!!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Ooty-Hill-Station.jpg" class="card-img-top" height="200" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ooty, Tamil Nadu</h5>
+                        <p class="card-text">Ooty or Ootacamund is famous for its picturesque sites and rolling hills where the chief attractions of Ooty are the sprawling tea gardens.</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal3">Click Here!!</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--MOdal use for 1 col 2 row-->
+    <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!--Col code copy-->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Mirik-westbengal.jpg" class="card-img-top" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mirik, West Bengal</h5>
+                            <p class="card-text">A beautiful hill station in West Bengal, famous for its spectacular beauty, easy accessibility & makes for a great destination for family holiday in East India.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MOdal use for 2 col 2 row-->
+    <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!--Col code copy-->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Gulmarg.jpg" class="card-img-top" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Gulmarg, Kashmir</h5>
+                            <p class="card-text">Gulmarg is a haven for any adventure aficionado seeking an adrenaline rush through winter sports like skiing, heli-skiing and snowboarding.</p>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+       <!--MOdal use for 3 col 2 row-->
+    <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!--Col code copy-->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Gulmarg.jpg" class="card-img-top" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Gulmarg, Kashmir</h5>
+                            <p class="card-text">Gulmarg is a haven for any adventure aficionado seeking an adrenaline rush through winter sports like skiing, heli-skiing and snowboarding.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal finished for 2 row-->
+    
+
+    <!--Bootstrap card use2-->
+    <div class="container">
+        <div class="row row-cols-3 mt-5 ml-5">
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Mirik-westbengal.jpg" class="card-img-top" height="200" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mirik, West Bengal</h5>
+                        <p class="card-text">A beautiful hill station in West Bengal, famous for its spectacular beauty, easy accessibility & makes for a great destination for family holiday in East India.</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal4">Click Here!!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Gulmarg.jpg" class="card-img-top" height="200" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gulmarg, Kashmir</h5>
+                        <p class="card-text">Gulmarg is a haven for any adventure aficionado seeking an adrenaline rush through winter sports like skiing, heli-skiing and snowboarding.</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal5">Click Here!!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Ooty-Hill-Station.jpg" class="card-img-top" height="200" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ooty, Tamil Nadu</h5>
+                        <p class="card-text">Ooty or Ootacamund is famous for its picturesque sites and rolling hills where the chief attractions of Ooty are the sprawling tea gardens.</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal6">Click Here!!</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>        
+
+     <!--MOdal use for 1 col 3 row-->
+     <div class="modal fade" id="Modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!--Col code copy-->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Khandala-Hill-Station.jpg" class="card-img-top" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Khandala, Maharashtra</h5>
+                            <p class="card-text">Khandala, a famous hill station in West India, is home to many beautiful caves, mountains and waterfalls, and offers an ideal escape from the hurriedness of city life!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MOdal use for 2 col 3 row-->
+    <div class="modal fade" id="Modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!--Col code copy-->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\7_Mussoorie.jpg" class="card-img-top" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mussoorie, Uttarakhand</h5>
+                            <p class="card-text">Mussoorie as this tourist place in Uttarakhand is one of the top 10 hill stations in India for a summer holiday, What makes it popular is the fact that it is a kids-friendly destination.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+       <!--MOdal use for 3 col 3 row-->
+    <div class="modal fade" id="Modal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!--Col code copy-->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Auli-Snow.jpg" class="card-img-top" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Auli, Uttarakhand</h5>
+                            <p class="card-text"> Auli, it would be gorgeous! This hill station in India is great for spending your summer vacation, not just for its beauty, but also for the opportunities it provides for adventure-based activities.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+     <!--Bootstrap card use3-->
+     <div class="container">
+        <div class="row row-cols-3 mt-5 ml-5">
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Khandala-Hill-Station.jpg" class="card-img-top" height="200" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Khandala, Maharashtra</h5>
+                        <p class="card-text">Khandala, a famous hill station in West India, is home to many beautiful caves, mountains and waterfalls, and offers an ideal escape from the hurriedness of city life!</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal7">Click Here!!</button>
+                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\7_Mussoorie.jpg" class="card-img-top" height="200" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mussoorie, Uttarakhand</h5>
+                        <p class="card-text">Mussoorie as this tourist place in Uttarakhand is one of the top 10 hill stations in India for a summer holiday, What makes it popular is the fact that it is a kids-friendly destination.</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal8">Click Here!!</button>
+                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Auli-Snow.jpg" class="card-img-top" height="200" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Auli, Uttarakhand</h5>
+                        <p class="card-text"> Auli, it would be gorgeous! This hill station in India is great for spending your summer vacation, not just for its beauty, but also for the opportunities it provides for adventure-based activities.</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal9">Click Here!!</button>
+                   
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>      
+    <!--Modal finisheed for 3 row-->
+    
+    <!--MOdal use for 1 col 4 row-->
+    <div class="modal fade" id="Modal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!--Col code copy-->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Darjeeling.jpg" class="card-img-top" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Darjeeling, West Bengal</h5>
+                            <p class="card-text"> Darjeeling, Fondly referred to as the Queen of the Hills,its rich in natural beauty, the Toy Train & various sightseeing opportunities and colonial era architecture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MOdal use for 2 col 3 row-->
+    <div class="modal fade" id="Modal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!--Col code copy-->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Meghalaya-Shillong.jpg" class="card-img-top" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Shillong, Meghalaya</h5>
+                            <p class="card-text">Shillong, the capital city of Meghalaya, boasts lush green rolling hills, vibrant ambiance and tranquil settings, all of which lead to it securing a spot.</p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+       <!--MOdal use for 3 col 3 row-->
+    <div class="modal fade" id="Modal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!--Col code copy-->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Pahalgam-Jammu-Kashmir.jpg" class="card-img-top" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pahalgam, Kashmir</h5>
+                            <p class="card-text"> Pahalgam is a picturesque landscape, an unmatched honeymoon destination with romantic ambience with tall deodar cedar trees. </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modfal finished for 4 row-->
+
+    <!--Bootstrap card use4-->
+    <div class="container">
+        <div class="row row-cols-3 mt-5 ml-5">
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Darjeeling.jpg" class="card-img-top" height="200" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Darjeeling, West Bengal</h5>
+                        <p class="card-text"> Darjeeling, Fondly referred to as the Queen of the Hills,its rich in natural beauty, the Toy Train & various sightseeing opportunities and colonial era architecture.</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal10">Click Here!!</button>
+                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Meghalaya-Shillong.jpg" class="card-img-top" height="200" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Shillong, Meghalaya</h5>
+                        <p class="card-text">Shillong, the capital city of Meghalaya, boasts lush green rolling hills, vibrant ambiance and tranquil settings, all of which lead to it securing a spot.</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal11">Click Here!!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="C:\Users\Janvi\Desktop\Htmlcss\Project\Images\Pahalgam-Jammu-Kashmir.jpg" class="card-img-top" height="200" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pahalgam, Kashmir</h5>
+                        <p class="card-text"> Pahalgam is a picturesque landscape, an unmatched honeymoon destination with romantic ambience with tall deodar cedar trees. </p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal12">Click Here!!</button>
+                   
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>        
+
+
+
+    
+
+
+
+
+
+
+
+
+                <!-- Footer -->
+                <br><br>
+                <footer class="text-center text-lg-start bg-dark text-light">
+                    <!-- Section: Social media -->
+                    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                    </section>
+                    <!-- Section: Social media -->
+
+                    <!-- Section: Links  -->
+                    <section class="">
+                        <div class="container text-center text-md-start mt-5">
+                            <!-- Grid row -->
+                            <div class="row mt-3">
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                    <!-- Content -->
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        <i class="fas fa-gem me-3"></i>Journey of Mountains
+                                    </h6>
+                                    <p>
+                                        Climb mountains not so the world can see you, but so you can see the world.
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Visit our Latest Blogs
+                                    </h6>
+                                    <p>
+                                        <a href="#!" class="text-reset">Blog A</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Blog B</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Blog C</a>
+                                    </p>
+                                </div>
+
+                                <!-- Grid column -->
+                                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mb-4">Contact US</h6>
+                                    <p><i class="fas fa-home me-3"></i> PUNJAB, INDIA</p>
+                                    <p>
+                                        <i class="fas fa-envelope me-3"></i>
+                                        info@example.com
+                                    </p>
+                                    <p><i class="fas fa-print me-3"></i> + 91 00000-00000</p>
+                                </div>
+                                <!-- Grid column -->
+                            </div>
+                            <!-- Grid row -->
+                        </div>
+                    </section>
+                    <!-- Section: Links  -->
+
+                    <!-- Copyright -->
+                    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                        © 2021 Copyright:
+                        <a class="text-reset fw-bold" href="#">JourneyofMountains.com</a>
+                    </div>
+                    <!-- Copyright -->
+                </footer>
+                <!-- Footer -->
+
+                <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+                    crossorigin="anonymous"></script>
+</body>
+
+</html>
